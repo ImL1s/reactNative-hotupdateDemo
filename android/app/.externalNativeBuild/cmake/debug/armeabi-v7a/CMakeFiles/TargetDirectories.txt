@@ -1,0 +1,3 @@
+/Users/iml1s-macpro/Project/ReactNative/Temp/hotUpdate/android/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/iml1s-macpro/Project/ReactNative/Temp/hotUpdate/android/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/Users/iml1s-macpro/Project/ReactNative/Temp/hotUpdate/android/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/bsdiff.dir
