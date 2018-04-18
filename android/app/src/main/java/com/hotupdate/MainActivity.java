@@ -37,6 +37,9 @@ public class MainActivity extends ReactActivity {
 
     }
 
+    /**
+     * 生成兩個測試文件來做diff測試
+     */
     protected void writeTestFile(){
         try {
             FileOutputStream outputStream1 = new FileOutputStream(file1);
