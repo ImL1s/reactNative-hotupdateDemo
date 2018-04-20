@@ -12,7 +12,7 @@ extern "C" {
  * Method:    genNewApk
  * Signature: (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
  */
-JNIEXPORT jint JNICALL Java_com_hht_lib_bsdiff_PatchUtils_patch
+JNIEXPORT jint JNICALL Java_com_hotupdate_utils_BsdiffUtils_patch
   (JNIEnv *, jclass, jstring, jstring, jstring);
 
 #ifdef __cplusplus

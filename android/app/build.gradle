@@ -111,6 +111,20 @@ android {
             stl "stlport_static"
         }
     }
+    signingConfigs {
+        release {
+            if (project.hasProperty('MYAPP_RELEASE_STORE_FILE')) {
+                storeFile file(MYAPP_RELEASE_STORE_FILE)
+                storePassword MYAPP_RELEASE_STORE_PASSWORD
+                keyAlias MYAPP_RELEASE_KEY_ALIAS
+                keyPassword MYAPP_RELEASE_KEY_PASSWORD
+            }
+            keyAlias 'iml1s'
+            keyPassword 'aa87078'
+            storeFile file('/Users/iml1s-macpro/Project/ReactNative/Temp/hotUpdate/android/app/hotupdate-release-key.keystore')
+            storePassword 'aa87078'
+        }
+    }
     splits {
         abi {
             reset()
@@ -147,9 +161,10 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: "libs", include: ["*.jar"])
-    compile "com.android.support:appcompat-v7:23.0.1"
-    compile "com.facebook.react:react-native:+" // From node_modules
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.facebook.react:react-native:+'
+    // From node_modules
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 

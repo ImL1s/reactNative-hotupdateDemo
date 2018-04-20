@@ -1,2 +1,7 @@
-import React from 'react';
-import {} from 'react-native';
+import React, { Component } from 'react';
+import {
+  Platform,
+  StyleSheet,
+  Text,
+  View
+} from 'react-native';

@@ -12,7 +12,7 @@ extern "C" {
  * Method:    genDiff
  * Signature: (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
  */
-JNIEXPORT jint JNICALL Java_com_hotupdate_BsdiffUtils_diff
+JNIEXPORT jint JNICALL Java_com_hotupdate_utils_BsdiffUtils_diff
   (JNIEnv *, jclass, jstring, jstring, jstring);
 
 #ifdef __cplusplus

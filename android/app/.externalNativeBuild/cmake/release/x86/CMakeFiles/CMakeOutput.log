@@ -3,17 +3,17 @@ The host system is: Darwin - 17.4.0 - x86_64
 Determining if the C compiler works passed with the following output:
 Change Dir: /Users/iml1s-macpro/Project/ReactNative/Temp/hotUpdate/android/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/iml1s-macpro/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_b8468"
-[1/2] Building C object CMakeFiles/cmTC_b8468.dir/testCCompiler.c.o
-[2/2] Linking C executable cmTC_b8468
+Run Build Command:"/Users/iml1s-macpro/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_7a021"
+[1/2] Building C object CMakeFiles/cmTC_7a021.dir/testCCompiler.c.o
+[2/2] Linking C executable cmTC_7a021
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /Users/iml1s-macpro/Project/ReactNative/Temp/hotUpdate/android/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/iml1s-macpro/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_7ad7e"
-[1/2] Building C object CMakeFiles/cmTC_7ad7e.dir/CMakeCCompilerABI.c.o
-[2/2] Linking C executable cmTC_7ad7e
+Run Build Command:"/Users/iml1s-macpro/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_fc6e0"
+[1/2] Building C object CMakeFiles/cmTC_fc6e0.dir/CMakeCCompilerABI.c.o
+[2/2] Linking C executable cmTC_fc6e0
 Android clang version 5.0.300080  (based on LLVM 5.0.300080)
 Target: i686-none-linux-android
 Thread model: posix
@@ -22,16 +22,16 @@ Found candidate GCC installation: /Users/iml1s-macpro/Library/Android/sdk/ndk-bu
 Selected GCC installation: /Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x
 Candidate multilib: .;@m32
 Selected multilib: .;@m32
- "/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/ld" --sysroot=/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86 -pie --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_7ad7e /Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib/crtbegin_dynamic.o -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/i386 -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_7ad7e.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib/crtend_android.o
+ "/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/ld" --sysroot=/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86 -pie --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_fc6e0 /Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib/crtbegin_dynamic.o -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/i386 -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_fc6e0.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib/crtend_android.o
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(i686-linux-android-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /Users/iml1s-macpro/Project/ReactNative/Temp/hotUpdate/android/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/Users/iml1s-macpro/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_7ad7e"]
-  ignore line: [[1/2] Building C object CMakeFiles/cmTC_7ad7e.dir/CMakeCCompilerABI.c.o]
-  ignore line: [[2/2] Linking C executable cmTC_7ad7e]
+  ignore line: [Run Build Command:"/Users/iml1s-macpro/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_fc6e0"]
+  ignore line: [[1/2] Building C object CMakeFiles/cmTC_fc6e0.dir/CMakeCCompilerABI.c.o]
+  ignore line: [[2/2] Linking C executable cmTC_fc6e0]
   ignore line: [Android clang version 5.0.300080  (based on LLVM 5.0.300080)]
   ignore line: [Target: i686-none-linux-android]
   ignore line: [Thread model: posix]
@@ -42,7 +42,7 @@ Parsed C implicit link information from above output:
   ignore line: [@m32]
   ignore line: [Selected multilib: .]
   ignore line: [@m32]
-  link line: [ "/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/ld" --sysroot=/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86 -pie --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_7ad7e /Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib/crtbegin_dynamic.o -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/i386 -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_7ad7e.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib/crtend_android.o]
+  link line: [ "/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/ld" --sysroot=/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86 -pie --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_fc6e0 /Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib/crtbegin_dynamic.o -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/i386 -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_fc6e0.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib/crtend_android.o]
     arg [/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/ld] ==> ignore
     arg [--sysroot=/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86] ==> ignore
     arg [-pie] ==> ignore
@@ -52,7 +52,7 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/system/bin/linker] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_7ad7e] ==> ignore
+    arg [cmTC_fc6e0] ==> ignore
     arg [/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib/crtbegin_dynamic.o] ==> ignore
     arg [-L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/i386] ==> dir [/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/i386]
     arg [-L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x] ==> dir [/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x]
@@ -71,7 +71,7 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [--gc-sections] ==> ignore
     arg [-znocopyreloc] ==> ignore
-    arg [CMakeFiles/cmTC_7ad7e.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_fc6e0.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [-ldl] ==> lib [dl]
     arg [-lc] ==> lib [c]
@@ -94,9 +94,9 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /Users/iml1s-macpro/Project/ReactNative/Temp/hotUpdate/android/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/iml1s-macpro/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_fec1c"
-[1/2] Building C object CMakeFiles/cmTC_fec1c.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_fec1c
+Run Build Command:"/Users/iml1s-macpro/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_e3bf1"
+[1/2] Building C object CMakeFiles/cmTC_e3bf1.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_e3bf1
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -108,9 +108,9 @@ Run Build Command:"/Users/iml1s-macpro/Library/Android/sdk/cmake/3.6.4111459/bin
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /Users/iml1s-macpro/Project/ReactNative/Temp/hotUpdate/android/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/iml1s-macpro/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_d1d0b"
-[1/2] Building C object CMakeFiles/cmTC_d1d0b.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_d1d0b
+Run Build Command:"/Users/iml1s-macpro/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_bc5a9"
+[1/2] Building C object CMakeFiles/cmTC_bc5a9.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_bc5a9
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -122,9 +122,9 @@ Run Build Command:"/Users/iml1s-macpro/Library/Android/sdk/cmake/3.6.4111459/bin
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /Users/iml1s-macpro/Project/ReactNative/Temp/hotUpdate/android/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/iml1s-macpro/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_be970"
-[1/2] Building C object CMakeFiles/cmTC_be970.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_be970
+Run Build Command:"/Users/iml1s-macpro/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_9fa98"
+[1/2] Building C object CMakeFiles/cmTC_9fa98.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_9fa98
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -134,17 +134,17 @@ Run Build Command:"/Users/iml1s-macpro/Library/Android/sdk/cmake/3.6.4111459/bin
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /Users/iml1s-macpro/Project/ReactNative/Temp/hotUpdate/android/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/iml1s-macpro/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_87fc3"
-[1/2] Building CXX object CMakeFiles/cmTC_87fc3.dir/testCXXCompiler.cxx.o
-[2/2] Linking CXX executable cmTC_87fc3
+Run Build Command:"/Users/iml1s-macpro/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_10a00"
+[1/2] Building CXX object CMakeFiles/cmTC_10a00.dir/testCXXCompiler.cxx.o
+[2/2] Linking CXX executable cmTC_10a00
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /Users/iml1s-macpro/Project/ReactNative/Temp/hotUpdate/android/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/iml1s-macpro/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_72283"
-[1/2] Building CXX object CMakeFiles/cmTC_72283.dir/CMakeCXXCompilerABI.cpp.o
-[2/2] Linking CXX executable cmTC_72283
+Run Build Command:"/Users/iml1s-macpro/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_13b35"
+[1/2] Building CXX object CMakeFiles/cmTC_13b35.dir/CMakeCXXCompilerABI.cpp.o
+[2/2] Linking CXX executable cmTC_13b35
 Android clang version 5.0.300080  (based on LLVM 5.0.300080)
 Target: i686-none-linux-android
 Thread model: posix
@@ -153,16 +153,16 @@ Found candidate GCC installation: /Users/iml1s-macpro/Library/Android/sdk/ndk-bu
 Selected GCC installation: /Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x
 Candidate multilib: .;@m32
 Selected multilib: .;@m32
- "/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/ld" --sysroot=/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86 -pie --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_72283 /Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib/crtbegin_dynamic.o -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/i386 -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_72283.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib/crtend_android.o
+ "/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/ld" --sysroot=/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86 -pie --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_13b35 /Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib/crtbegin_dynamic.o -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/i386 -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_13b35.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib/crtend_android.o
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(i686-linux-android-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /Users/iml1s-macpro/Project/ReactNative/Temp/hotUpdate/android/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/Users/iml1s-macpro/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_72283"]
-  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_72283.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [[2/2] Linking CXX executable cmTC_72283]
+  ignore line: [Run Build Command:"/Users/iml1s-macpro/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_13b35"]
+  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_13b35.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [[2/2] Linking CXX executable cmTC_13b35]
   ignore line: [Android clang version 5.0.300080  (based on LLVM 5.0.300080)]
   ignore line: [Target: i686-none-linux-android]
   ignore line: [Thread model: posix]
@@ -173,7 +173,7 @@ Parsed CXX implicit link information from above output:
   ignore line: [@m32]
   ignore line: [Selected multilib: .]
   ignore line: [@m32]
-  link line: [ "/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/ld" --sysroot=/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86 -pie --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_72283 /Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib/crtbegin_dynamic.o -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/i386 -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_72283.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib/crtend_android.o]
+  link line: [ "/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/ld" --sysroot=/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86 -pie --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_13b35 /Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib/crtbegin_dynamic.o -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/i386 -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_13b35.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib/crtend_android.o]
     arg [/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/ld] ==> ignore
     arg [--sysroot=/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86] ==> ignore
     arg [-pie] ==> ignore
@@ -183,7 +183,7 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/system/bin/linker] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_72283] ==> ignore
+    arg [cmTC_13b35] ==> ignore
     arg [/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib/crtbegin_dynamic.o] ==> ignore
     arg [-L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/i386] ==> dir [/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/i386]
     arg [-L/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x] ==> dir [/Users/iml1s-macpro/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x]
@@ -202,7 +202,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [--gc-sections] ==> ignore
     arg [-znocopyreloc] ==> ignore
-    arg [CMakeFiles/cmTC_72283.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_13b35.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc] ==> lib [gcc]
@@ -231,9 +231,9 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /Users/iml1s-macpro/Project/ReactNative/Temp/hotUpdate/android/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/iml1s-macpro/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_66c13"
-[1/2] Building CXX object CMakeFiles/cmTC_66c13.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_66c13
+Run Build Command:"/Users/iml1s-macpro/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_75eb6"
+[1/2] Building CXX object CMakeFiles/cmTC_75eb6.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_75eb6
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -298,9 +298,9 @@ Run Build Command:"/Users/iml1s-macpro/Library/Android/sdk/cmake/3.6.4111459/bin
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /Users/iml1s-macpro/Project/ReactNative/Temp/hotUpdate/android/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/iml1s-macpro/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_de72e"
-[1/2] Building CXX object CMakeFiles/cmTC_de72e.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_de72e
+Run Build Command:"/Users/iml1s-macpro/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_16cc5"
+[1/2] Building CXX object CMakeFiles/cmTC_16cc5.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_16cc5
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -365,9 +365,9 @@ Run Build Command:"/Users/iml1s-macpro/Library/Android/sdk/cmake/3.6.4111459/bin
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /Users/iml1s-macpro/Project/ReactNative/Temp/hotUpdate/android/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/iml1s-macpro/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_0419f"
-[1/2] Building CXX object CMakeFiles/cmTC_0419f.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_0419f
+Run Build Command:"/Users/iml1s-macpro/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_4558b"
+[1/2] Building CXX object CMakeFiles/cmTC_4558b.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_4558b
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

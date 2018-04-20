@@ -1,14 +1,14 @@
 # ninja log v5
-4	282	0	CMakeFiles/bsdiff.dir/src/main/jni/bsdiff/bzip2/crctable.c.o	191a8838fbcf09a9
-1	291	0	CMakeFiles/bsdiff.dir/src/main/jni/bsdiff/bzip2/randtable.c.o	33258d1e36d2cc9c
-3	301	0	CMakeFiles/bsdiff.dir/src/main/jni/bsdiff/bzip2/bzip2recover.c.o	9bae3e0fc94b5fee
-3	322	0	CMakeFiles/bsdiff.dir/src/main/jni/bsdiff/bzip2/huffman.c.o	29763a3abb254264
-2	396	0	CMakeFiles/bsdiff.dir/src/main/jni/bsdiff/bzip2/blocksort.c.o	38ca5921f874611c
-2	415	0	CMakeFiles/bsdiff.dir/src/main/jni/bsdiff/bzip2/compress.c.o	d6db58e61198e597
-2	432	0	CMakeFiles/bsdiff.dir/src/main/jni/bsdiff/bzip2/decompress.c.o	195f16221b533762
-5	463	0	CMakeFiles/bsdiff.dir/src/main/jni/bsdiff/bzip2/bzlib.c.o	f26ee1b6a932615
-283	473	0	CMakeFiles/bsdiff.dir/src/main/jni/bsdiff/com_hht_lib_bsdiff_PatchUtils.c.o	5d6a3f9830864261
-6	473	0	CMakeFiles/bsdiff.dir/src/main/jni/bsdiff/bzip2/bzip2.c.o	c14525becbc2303f
-291	478	0	CMakeFiles/bsdiff.dir/src/main/jni/bsdiff/com_hht_lib_bsdiff_DiffUtils.c.o	efdb927350947c9f
-8	485	0	CMakeFiles/bsdiff.dir/src/main/jni/bsdiff/ApkPatchLibrary.cpp.o	5c3083f3409c46b8
-485	625	0	../../../../build/intermediates/cmake/debug/obj/x86/libbsdiff.so	24bbaae3643864ef
+4	130	0	CMakeFiles/bsdiff.dir/src/main/jni/bsdiff/bzip2/bzip2recover.c.o	9bae3e0fc94b5fee
+2	142	0	CMakeFiles/bsdiff.dir/src/main/jni/bsdiff/bzip2/randtable.c.o	33258d1e36d2cc9c
+4	149	0	CMakeFiles/bsdiff.dir/src/main/jni/bsdiff/bzip2/crctable.c.o	191a8838fbcf09a9
+8	156	0	CMakeFiles/bsdiff.dir/src/main/jni/bsdiff/ApkPatchLibrary.cpp.o	5c3083f3409c46b8
+3	172	0	CMakeFiles/bsdiff.dir/src/main/jni/bsdiff/bzip2/huffman.c.o	29763a3abb254264
+3	248	0	CMakeFiles/bsdiff.dir/src/main/jni/bsdiff/bzip2/blocksort.c.o	38ca5921f874611c
+2	255	0	CMakeFiles/bsdiff.dir/src/main/jni/bsdiff/bzip2/compress.c.o	d6db58e61198e597
+2	270	0	CMakeFiles/bsdiff.dir/src/main/jni/bsdiff/bzip2/decompress.c.o	195f16221b533762
+131	284	0	CMakeFiles/bsdiff.dir/src/main/jni/bsdiff/com_hht_lib_bsdiff_PatchUtils.c.o	5d6a3f9830864261
+5	296	0	CMakeFiles/bsdiff.dir/src/main/jni/bsdiff/bzip2/bzlib.c.o	f26ee1b6a932615
+142	303	0	CMakeFiles/bsdiff.dir/src/main/jni/bsdiff/com_hht_lib_bsdiff_DiffUtils.c.o	efdb927350947c9f
+6	308	0	CMakeFiles/bsdiff.dir/src/main/jni/bsdiff/bzip2/bzip2.c.o	c14525becbc2303f
+308	391	0	../../../../build/intermediates/cmake/debug/obj/x86/libbsdiff.so	24bbaae3643864ef

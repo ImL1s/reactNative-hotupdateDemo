@@ -438,7 +438,7 @@ int genpatch(int argc, char *argv[]) {
 	return 0;
 }
 
-JNIEXPORT jint JNICALL Java_com_hotupdate_BsdiffUtils_diff(JNIEnv *env,
+JNIEXPORT jint JNICALL Java_com_hotupdate_utils_BsdiffUtils_diff(JNIEnv *env,
 		jclass cls, jstring old, jstring new, jstring patch) {
 	int argc = 4;
 	char * argv[argc];
