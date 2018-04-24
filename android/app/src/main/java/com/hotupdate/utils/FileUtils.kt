@@ -2,7 +2,7 @@ package com.hotupdate.utils
 
 import android.content.Context
 import com.hotupdate.JS_BUNDLE_LOCAL_FILE_NAME
-import com.hotupdate.JS_PATCH_LOCAL_FOLDER
+import com.hotupdate.JS_BUNDLE_LOCAL_FOLDER
 import com.hotupdate.manager.DownloadTask
 import java.io.*
 import java.nio.charset.Charset
@@ -16,20 +16,26 @@ import java.util.zip.ZipInputStream
  */
 object FileUtils {
 
-    fun decompression() {
+    fun decompression(): String? {
         val zipInputStream = ZipInputStream(FileInputStream(DownloadTask.INSTANCE.zipFile))
         var zipEntry: ZipEntry?
         var szName: String
+        var firstZipName: String? = null
+        var hasFirstZipName = false
         zipEntry = zipInputStream.nextEntry
 
         while (zipEntry != null) {
             szName = zipEntry.name
             if (zipEntry.isDirectory) {
                 szName = szName.substring(0, szName.length - 1)
-                val folder = File(JS_PATCH_LOCAL_FOLDER + File.separator + szName)
+                val folder = File(JS_BUNDLE_LOCAL_FOLDER + File.separator + szName)
                 folder.mkdirs()
             } else {
-                val file = File(JS_PATCH_LOCAL_FOLDER + File.separator + szName)
+                if (!hasFirstZipName) {
+                    firstZipName = szName
+                    hasFirstZipName = true
+                }
+                val file = File(JS_BUNDLE_LOCAL_FOLDER + File.separator + szName)
                 val createSucc = file.createNewFile()
                 val fileOutputStream = FileOutputStream(file)
                 var len = 0
@@ -45,6 +51,7 @@ object FileUtils {
         }
 
         zipInputStream.close()
+        return firstZipName
     }
 
     fun getJsBundleStringFromAssets(context: Context): String {
@@ -66,5 +73,48 @@ object FileUtils {
             e.printStackTrace()
             ""
         }
+    }
+
+    fun getStringFromPatch(patchPath: String): String? {
+        val fileReader: FileReader
+        var result: String? = null
+        val stringBuilder: StringBuilder
+
+        try {
+            fileReader = FileReader(patchPath)
+            var char = fileReader.read()
+            stringBuilder = StringBuilder()
+            while (char != -1) {
+                stringBuilder.append(char)
+                char = fileReader.read()
+            }
+            fileReader.close()
+            result = stringBuilder.toString()
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+        return result
+    }
+
+    fun copyAssetToPath(context: Context, assetPath: String, destination: String): Boolean {
+        val inputStream: InputStream
+        val outputStream: FileOutputStream
+        var buffer = 0
+
+        try {
+            inputStream = context.assets.open(assetPath)
+            outputStream = FileOutputStream(destination)
+            while ({ buffer = inputStream.read(); buffer }() != -1) {
+                outputStream.write(buffer)
+            }
+
+            outputStream.close()
+            inputStream.close()
+
+        } catch (e: Exception) {
+            e.printStackTrace()
+            return false
+        }
+        return true
     }
 }

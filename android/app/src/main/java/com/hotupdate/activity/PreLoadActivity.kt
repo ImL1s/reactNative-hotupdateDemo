@@ -4,18 +4,16 @@ import android.Manifest
 import android.app.Activity
 import android.app.DownloadManager
 import android.content.BroadcastReceiver
-import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
-import android.content.pm.PackageManager
 import android.os.Bundle
 import android.os.Environment
 import android.support.v4.app.ActivityCompat
-import android.support.v4.content.ContextCompat
 import android.util.Log
 import android.widget.TextView
 import com.hotupdate.JS_PATCH_LOCAL_FOLDER
-import com.hotupdate.manager.DownloadTask
+import com.hotupdate.PathConstant
+import com.hotupdate.receiver.CompleteReceiver
 import com.hotupdate.utils.BsdiffUtils
 import com.hotupdate.utils.UpdateUtils
 import java.io.File
@@ -38,13 +36,29 @@ class PreLoadActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(TextView(this))
+        PathConstant.ensurePath()
         requestPermission()
         registerReceiver()
         UpdateUtils.checkFirstUpdate(this, JS_PATCH_LOCAL_FOLDER)
         UpdateUtils.checkVersion(this)
-        setContentView(TextView(this))
         val intent = Intent(this, MainActivity::class.java)
-//        startActivity(intent)
+        startActivity(intent)
+
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        unRegisterCustomReceiver()
+    }
+
+    protected fun registerReceiver() {
+        if (receiver == null) receiver = CompleteReceiver()
+        registerReceiver(receiver, IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE))
+    }
+
+    private fun unRegisterCustomReceiver() {
+        if (receiver != null) unregisterReceiver(receiver)
     }
 
     /**
@@ -79,10 +93,6 @@ class PreLoadActivity : Activity() {
         Log.d("hotupdate", "patch: $patch")
     }
 
-    protected fun registerReceiver() {
-        receiver = CompleteReceiver()
-        registerReceiver(receiver, IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE))
-    }
 
     protected fun requestPermission() {
 //        if (ContextCompat.checkSelfPermission(this,
@@ -97,12 +107,3 @@ class PreLoadActivity : Activity() {
     }
 }
 
-class CompleteReceiver : BroadcastReceiver() {
-
-    override fun onReceive(context: Context, intent: Intent) {
-        val completeId = intent.getLongExtra(DownloadManager.EXTRA_DOWNLOAD_ID, -1)
-        if (completeId == DownloadTask.INSTANCE.currentDownloadID) {
-            // TODO
-        }
-    }
-}

@@ -197,8 +197,8 @@ JNIEXPORT jint JNICALL Java_com_hotupdate_utils_BsdiffUtils_patch
     argv[1] = (char *) ((*env)->GetStringUTFChars(env, old, 0));
     argv[2] = (char *) ((*env)->GetStringUTFChars(env, new, 0));
     argv[3] = (char *) ((*env)->GetStringUTFChars(env, patch, 0));
-    LOGD("argc: %d, argv: %p, oldPath: %s, newPath: %s, pathPath: %s", argc, argv, argv[1], argv[2],
-         argv[3]);
+//    LOGD("argc: %d, argv: %p, oldPath: %s, newPath: %s, pathPath: %s", argc, argv, argv[1], argv[2],
+//         argv[3]);
 
 //	printf("old apk = %s \n", argv[1]);
 //	printf("patch = %s \n", argv[3]);

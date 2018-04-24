@@ -4,10 +4,7 @@ import android.app.DownloadManager
 import android.content.Context
 import android.net.Uri
 import android.widget.Toast
-import com.hotupdate.DOWNLOAD_ZIP_NAME
-import com.hotupdate.JS_BUNDLE_REMOTE_URL
-import com.hotupdate.LOCAL_FOLDER_NAME
-import com.hotupdate.MainApplication
+import com.hotupdate.*
 import com.hotupdate.manager.DownloadTask
 import java.io.File
 
@@ -29,7 +26,8 @@ object UpdateUtils {
     @JvmStatic
     fun checkFirstUpdate(context: Context, filePath: String) {
         val bundleFile = File(filePath)
-        MainApplication.getInstance().isFirstUpdate = !bundleFile.exists()
+//        MainApplication.getInstance().isFirstUpdate = !bundleFile.exists()
+        MainApplication.getInstance().isFirstUpdate = true
     }
 
     private fun downloadBundle(context: Context) {
@@ -41,7 +39,8 @@ object UpdateUtils {
         val request = DownloadManager.Request(Uri.parse(JS_BUNDLE_REMOTE_URL))
                 .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
                 .setAllowedNetworkTypes(DownloadManager.Request.NETWORK_MOBILE or DownloadManager.Request.NETWORK_WIFI)
-                .setDestinationInExternalPublicDir(LOCAL_FOLDER_NAME, DOWNLOAD_ZIP_NAME)
+                .setDestinationInExternalPublicDir(LOCAL_FOLDER_NAME,
+                        MAIN_BUNDLE_FOLDER_NAME + File.separator + DOWNLOAD_ZIP_NAME)
 //                .setDestinationUri(Uri.parse("file://$JS_PATCH_LOCAL_FOLDER"))
         DownloadTask.INSTANCE.currentDownloadID = downloadManager.enqueue(request)
     }

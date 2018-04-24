@@ -16,5 +16,6 @@ class DownloadTask {
 
     var currentDownloadID = -1L
     var zipFile = File(JS_PATCH_LOCAL_PATH)
+    var currentDownloadPatchName: String? = null
 
 }
