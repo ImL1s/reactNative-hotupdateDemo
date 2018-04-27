@@ -13,6 +13,7 @@ const val JS_BUNDLE_TEMP_LOCAL_FILE_NAME = "index.android.temp.bundle"
 const val JS_BUNDLE_FOLDER_NAME = "bundle"
 const val MAIN_BUNDLE_FOLDER_NAME = "bundle"
 const val DOWNLOAD_ZIP_NAME = "patch.zip"
+const val BASE_URL = "http:/127.0.0.1:5055"
 const val JS_BUNDLE_REMOTE_URL = "http://127.0.0.1:5055/patch/1.0.0-1.0.1.patch.zip" // 伺服器熱更新patch下載地址
 
 val LOCAL_FOLDER_NAME: String = MainApplication.getInstance().packageName

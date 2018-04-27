@@ -4,9 +4,10 @@ import android.app.DownloadManager
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import android.os.SystemClock
 import android.util.Log
 import com.hotupdate.*
+import com.hotupdate.extension.logD
+import com.hotupdate.extension.toast
 import com.hotupdate.manager.DownloadTask
 import com.hotupdate.utils.BsdiffUtils
 import com.hotupdate.utils.FileUtils
@@ -28,8 +29,13 @@ class CompleteReceiver : BroadcastReceiver() {
     }
 
     private fun mergePathAndAsset(context: Context) {
+        if (DownloadTask.INSTANCE.currentDownloadPatchName == null) {
+            context.getString(R.string.network_unavailable)
+                    .toast(context)
+                    .logD(Tag.DEBUG.value)
+        }
         // 首次開啟app,將asset目錄下的index.android.bundle複製到sd卡下
-        if (MainApplication.getInstance().isFirstUpdate) {
+        else if (MainApplication.getInstance().isFirstUpdate) {
             // region
 //            val commonAssetBundleString = FileUtils.getJsBundleStringFromAssets(MainApplication.getInstance())
 //            val patchString = FileUtils.getStringFromPatch(JS_PATCH_LOCAL_FILE(DownloadTask.INSTANCE.currentDownloadPatchName!!))
@@ -40,7 +46,7 @@ class CompleteReceiver : BroadcastReceiver() {
 //            }
             // endregion
             val paddingResult = goAsync()
-            Thread{
+            Thread {
                 FileUtils.copyAssetToPath(context, JS_BUNDLE_LOCAL_FILE_NAME, JS_BUNDLE_TEMP_LOCAL_PATH)
                 BsdiffUtils.patch(JS_BUNDLE_TEMP_LOCAL_PATH, JS_BUNDLE_LOCAL_PATH, JS_PATCH_LOCAL_FILE(DownloadTask.INSTANCE.currentDownloadPatchName!!))
                 Log.d(Tag.DEBUG.value, "更新成功!!")

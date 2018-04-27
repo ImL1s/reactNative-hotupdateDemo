@@ -17,8 +17,6 @@ import javax.annotation.Nullable;
 
 public class MainApplication extends Application implements ReactApplication {
 
-    public boolean isFirstUpdate = false;
-
     private static final String TAG = "hotupdate";
 
     private static MainApplication mInstance = null;
@@ -30,6 +28,9 @@ public class MainApplication extends Application implements ReactApplication {
         }
         return mInstance;
     }
+
+    public boolean isFirstUpdate = false;
+
 
     private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
         @Override

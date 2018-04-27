@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">hotUpdate</string>
+    <string name="begin_download">開始下載</string>
+    <string name="network_unavailable">下載patch補丁失敗,請連接網路後再嘗試</string>
+    <string name="hot_update_succ">熱更新成功</string>
+    <string name="is_reload_now">現在重啟讀取嗎?</string>
+
 </resources>
