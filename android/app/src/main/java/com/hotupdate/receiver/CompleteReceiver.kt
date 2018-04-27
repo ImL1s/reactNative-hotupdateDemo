@@ -49,6 +49,7 @@ class CompleteReceiver : BroadcastReceiver() {
             Thread {
                 FileUtils.copyAssetToPath(context, JS_BUNDLE_LOCAL_FILE_NAME, JS_BUNDLE_TEMP_LOCAL_PATH)
                 BsdiffUtils.patch(JS_BUNDLE_TEMP_LOCAL_PATH, JS_BUNDLE_LOCAL_PATH, JS_PATCH_LOCAL_FILE(DownloadTask.INSTANCE.currentDownloadPatchName!!))
+                // TODO 將config.json(本次更新訊息)儲存起來
                 Log.d(Tag.DEBUG.value, "更新成功!!")
                 val intent = Intent()
                 intent.action = ACTION_NATIVE_RECEIVER

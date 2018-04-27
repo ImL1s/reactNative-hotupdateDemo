@@ -52,7 +52,7 @@ class PreLoadActivity : Activity() {
         unRegisterCustomReceiver()
     }
 
-    protected fun registerReceiver() {
+    private fun registerReceiver() {
         if (receiver == null) receiver = CompleteReceiver()
         registerReceiver(receiver, IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE))
     }
@@ -61,9 +61,22 @@ class PreLoadActivity : Activity() {
         if (receiver != null) unregisterReceiver(receiver)
     }
 
+    private fun requestPermission() {
+//        if (ContextCompat.checkSelfPermission(this,
+//                        android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
+//                != PackageManager.PERMISSION_GRANTED) {
+//            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE), 1)
+//        }
+        ActivityCompat.requestPermissions(this, arrayOf(
+                Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                Manifest.permission.READ_EXTERNAL_STORAGE,
+                Manifest.permission.CALL_PHONE), 1)
+    }
+
     /**
      * 生成兩個測試文件來做diff測試
      */
+    // TODO move to test
     protected fun writeTestFile() {
         try {
             val outputStream1 = FileOutputStream(file1)
@@ -86,6 +99,7 @@ class PreLoadActivity : Activity() {
 
     }
 
+    // TODO move to test
     protected fun jniDiffAndPatchTest() {
         val diff = BsdiffUtils.diff(file1.absolutePath, file2.absolutePath, file3.absolutePath)
         val patch = BsdiffUtils.patch(file1.absolutePath, file4.absolutePath, file3.absolutePath)
@@ -94,16 +108,6 @@ class PreLoadActivity : Activity() {
     }
 
 
-    protected fun requestPermission() {
-//        if (ContextCompat.checkSelfPermission(this,
-//                        android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
-//                != PackageManager.PERMISSION_GRANTED) {
-//            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE), 1)
-//        }
-        ActivityCompat.requestPermissions(this, arrayOf(
-                Manifest.permission.WRITE_EXTERNAL_STORAGE,
-                Manifest.permission.READ_EXTERNAL_STORAGE,
-                Manifest.permission.CALL_PHONE), 1)
-    }
+
 }
 

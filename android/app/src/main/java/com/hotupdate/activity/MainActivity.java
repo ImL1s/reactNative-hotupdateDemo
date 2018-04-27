@@ -101,8 +101,18 @@ public class MainActivity extends ReactActivity {
         }
 
         private void restartActivity() {
+            // TODO restart app to reload js bundle
             finish();
             startActivity(getIntent());
+
+            // try this code
+//            Intent mStartActivity = new Intent(context, StartActivity.class);
+//            int mPendingIntentId = 123456;
+//            PendingIntent mPendingIntent = PendingIntent.getActivity(context, mPendingIntentId,    mStartActivity, PendingIntent.FLAG_CANCEL_CURRENT);
+//            AlarmManager mgr = (AlarmManager)context.getSystemService(Context.ALARM_SERVICE);
+//            mgr.set(AlarmManager.RTC, System.currentTimeMillis() + 100, mPendingIntent);
+//            System.exit(0);
+
         }
     }
 }
