@@ -21,3 +21,16 @@
 3. 客戶端(native)發現有版本更新,下載伺服器上的差異包(.patch)文件
 4. 客戶端(native)下載完畢,將差異包(.patch)與common.bundle做合併(patch)
 5. 合併完成,詢問用戶是否重新讀取
+
+
+## 常見問題
+
+#### 為什麼不使用CodePush?
+
+    因為CodePush只有資源做Diff,js code沒有diff.
+
+#### 如何在Android做到diff拆分/patch打包?
+
+    在Android下使用JNI的方式去呼叫C++的程式碼做diff/patch,具體的工具類叫`BsdiffUtils`.
+    
+    在Client端一般用不到diff的功能,通常是: 程序員產出新版本 -> 做diff -> 更改server update json file -> client熱更新 -> client做patch.
